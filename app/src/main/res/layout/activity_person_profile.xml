@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorProfile"
+    tools:context=".PersonProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_profile_pic"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/person_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile Name"
+                android:layout_below="@+id/person_profile_pic"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/person_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="user name"
+                android:layout_below="@+id/person_full_name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/person_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hey there, I'm using social app, developed by Jaiten Thomas"
+                android:layout_below="@+id/person_username"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="22sp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/person_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_profile_status"
+                android:layout_marginTop="60dp"
+                android:text="Country"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/person_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:layout_below="@+id/person_country"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:layout_marginTop="2dp"
+                />
+
+            <TextView
+                android:id="@+id/person_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_below="@+id/person_dob"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:layout_marginTop="2dp"
+                />
+            <TextView
+                android:id="@+id/person_relationship_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relationship Status"
+                android:layout_below="@+id/person_gender"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:layout_marginTop="2dp"
+                />
+            
+            <Button
+                android:id="@+id/person_send_friend_request_button"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_relationship_status"
+                android:layout_marginTop="45dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Send Friend Request"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:id="@+id/person_decline_friend_request_button"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_send_friend_request_button"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:text="Decline Friend Request"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                />
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
